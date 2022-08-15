@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Gentium Plus", serif;
+}
+
+html {
+  font-size: 16px;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: rgba(28, 14, 247, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  color: rgb(7 34 135);
+  font-family: "Gentium Plus", serif;
+}
+
+.container {
+  width: min(90%, 1140px);
+  margin: 3rem auto;
+}
+
+#allComments {
+  background-color: transparent;
+  border: none;
+  clear: left;
+  min-height: 0;
+  display: block;
+}
+
+.wrapper {
+  padding: 20px;
+  background-color: white;
+  /* border: 1px solid rgba(0, 0, 0, 0.3); */
+  border-radius: 0.5rem;
+  width: 70vw;
+  box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+  margin: 20px;
+}
+
+.wrapper-child {
+  padding: 20px;
+  background-color: lightblue;
+  /* border: 1px solid rgba(0, 0, 0, 0.3); */
+  border-radius: 0.5rem;
+  width: 70vw;
+  box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+  margin: 20px;
+}
+
+textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: rgb(247, 240, 240);
+  padding: 10px;
+  border-radius: 20px;
+  width: 50%;
+  padding: 15px;
+  margin-bottom: 17px;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  font-size: 18px;
+  font-family: "Gentium Plus", serif;
+}
+
+#allComments:not(:first-child) {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+#replyid {
+  left: 30px;
+  position: relative;
+  top: 10px;
+}
+
+#addComments {
+  position: relative;
+  top: -44px;
+  left: 25px;
+  height: 60px;
+  width: 160px;
+}
+
+.addReply,
+.cancelReply {
+  position: relative;
+  top: -44px;
+  left: 2px;
+  height: 60px;
+  width: 150px;
+  margin: 5px;
+}
+
+.reply,
+.likeComment,
+.deleteComment,
+.addReply,
+.cancelReply,
+#addComments {
+  opacity: 0.6;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  font-size: 20px;
+  background: rgba(28, 14, 247, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Gentium Plus", serif;
+}
+
+.reply:hover,
+.likeComment:hover,
+.deleteComment:hover,
+.addReply:hover,
+.cancelReply:hover,
+#addComments:hover {
+  border: 3px solid rgb(205 24 24 / 18%);
+}
+
+.reply,
+.likeComment,
+.deleteComment {
+  height: 40px;
+  width: 85px;
+  margin: 8px;
+  left: 20rem;
+}
+
+.text-content {
+  margin: 15px;
+  word-break: break-all;
+  text-align: left;
+  font-size: 20px;
+}
