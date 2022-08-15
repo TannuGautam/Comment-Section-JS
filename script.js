@@ -97,6 +97,6 @@ document.getElementById("allComments").addEventListener("click", function (e) {
     setOnLocalStorage();
   } else if (hasClass(e.target, "deleteComment")) {
     e.target.parentElement.remove();
-    console.log("removed");
+    setOnLocalStorage();
   }
 });
